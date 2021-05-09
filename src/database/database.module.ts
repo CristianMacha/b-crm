@@ -14,7 +14,7 @@ const defaultOptions: TypeOrmModuleOptions = {
   imports: [
     TypeOrmModule.forRoot({
       ...defaultOptions,
-      synchronize: true,
+      synchronize: false,
       entities: [__dirname + '/../modules/**/*.entity{.ts,.js}'],
     }),
   ],
