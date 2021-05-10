@@ -39,7 +39,7 @@ export class AuthService {
             userdb.role,
         );
 
-        return access_token;
+        return { access_token };
     }
 
     async getUserAuthenticated(userAuth: any) {
